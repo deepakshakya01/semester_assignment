@@ -1,0 +1,21 @@
+
+/*---font-family Dancing Script---*/
+@font-face{
+    font-family:Dancing_Script;
+     src: url('../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+}
+/*---font-family Bellota---*/
+@font-face{
+    font-family:Bellota;
+     src: url('../fonts/Bellota/Bellota-Light.ttf');
+}
+/*---font-family Indie_Flower---*/
+@font-face{
+    font-family:Indie_Flower;
+     src: url('../fonts/Indie_Flower/IndieFlower-Regular.ttf');
+}
+/*---font-family Shadows_into_Light---*/
+@font-face{
+    font-family:Shadows_into_Light;
+     src: url('../fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf');
+}

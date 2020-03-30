@@ -1,0 +1,171 @@
+
+@import url('../css/fonts.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* ----Global Classes---*/
+a{
+    text-decoration: none;
+    color:grey;
+}
+.flex-row{
+    display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type:none;
+}
+/*global classes*/
+
+/*-------navbar------  */
+.nav{
+    background-color: white;
+    padding:0   2rem;
+    height:0rem;
+    min-height: 13vh;
+    overflow:hidden;
+    transition: height 0.5s ease-in-out;
+    
+}
+.nav .nav-menu{
+    justify-content: space-between;  
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: progress;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons {
+    display:flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i {
+    font-size: x-large;
+    color: grey;
+}
+.collapse{
+    height: 40rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin-top: initial;    
+}
+.nav .nav-items .nav-link {
+    padding: 1.2rem 1rem; 
+    font-size:1.3rem;
+    position: relative;    
+}
+
+/* ---- When hover above the items*/
+.nav .nav-items .nav-link a{
+     color: cadetblue;
+     font-family:Shadows_into_Light;
+     font-size: larger; 
+}
+
+.nav .nav-items .nav-link a:hover{
+    color:brown;
+    
+}
+
+.nav .nav-brand a{
+    font-size:2rem;
+    padding:1rem ;
+    display:block;
+    font-family: Indie_Flower;
+}
+.nav .social{
+    padding: 0.8rem 0;
+}
+.nav .social i{
+    padding: 0.3rem;
+}
+.nav .social i:hover{
+    color: brown;
+}
+
+
+
+/*---------nabar------------- */
+/* -------------Main Section---------*/
+main .site-title{
+    background: url("../images/hpwa-i-bnn-1.jpg");
+    background-size: cover; 
+    height:85vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align:center;
+    color: whitesmoke;
+}
+
+main .site-title h1 h3{
+    margin: 3rem;
+}
+main .site-title h1{
+    font-size: 3rem;
+    color: cornsilk;
+}
+main .site-title h3{
+    color: bisque;
+    font-size: 2rem;
+}
+
+button.btn{
+   border: none;
+   background: bisque;
+   border-radius: 3rem;
+   padding: 1rem 9rem;
+   font-family: Bellota;
+   font-size: large;
+   font-weight: bolder;
+   text-decoration: dotted;
+
+}
+
+button.btn:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+/*------------*---Site title-------------*/
+
+/*------------*---Blog-Carousel----------*/
+main .blog{
+    background: url("/images/Background-website-01.jpg");
+    background-repeat:no-repeat;
+    background-position: right;
+    height:100vh;
+    width: 100%;
+
+}
+
+
+/*------------*---Blog-Carousel----------*/
+
+/* -------------main Section-----------*/
+
+/*-----Viewport less than or equal to 750 px---*/
+
+
+@media only screen and (max-width:850px){
+  .nav .nav-menu, .nav .nav-items {
+     flex-direction:column;
+     position: centre;
+  }
+  .nav .toggle-collapse{
+      display: initial;
+  }
+  
+}
